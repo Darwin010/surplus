@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Myapp</title>
+    <title>Splurty</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,27 @@
   </head>
 
   <body>
+    <header class="row">
+    
+    <div>
+      <div class="col-3"></div>
+      LOGO
+    </div>
+    
+    <div class="col-4">
+      Splurting out unsolicited entrepreneurship since 2016
+    </div>
+    
+    <div class="col-5">
+        <%= link_to 'Contribute', '#' %>
+        <%= link_to 'About', '#' %>
+      </div>
+    </header>
+    
+    <br class="clear" />
+    
     <%= yield %>
-  </body>
+  
+    </body>
+  
 </html>
